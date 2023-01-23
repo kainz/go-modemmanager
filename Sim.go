@@ -170,9 +170,9 @@ func (sm sim) MarshalJSON() ([]byte, error) {
 		return nil, err
 	}
 	emergencyNumbers, err := sm.GetEmergencyNumbers()
-	if err != nil {
-		return nil, err
-	}
+	//if err != nil {
+	//	return nil, err
+	//}
 	return json.Marshal(map[string]interface{}{
 		"SimIdentifier":      simIdentifier,
 		"Imsi":               imsi,

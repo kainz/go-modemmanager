@@ -823,13 +823,13 @@ func (m modem) MarshalJSON() ([]byte, error) {
 		return nil, err
 	}
 	carrierConfiguration, err := m.GetCarrierConfiguration()
-	if err != nil {
-		return nil, err
-	}
+	//if err != nil {
+	//	return nil, err
+	//}
 	carrierConfigurationRevision, err := m.GetCarrierConfigurationRevision()
-	if err != nil {
-		return nil, err
-	}
+	//if err != nil {
+	//	return nil, err
+	//}
 	hardwareRevision, err := m.GetHardwareRevision()
 	if err != nil {
 		return nil, err
